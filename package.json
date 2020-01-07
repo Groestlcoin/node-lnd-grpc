@@ -30,7 +30,7 @@
     "url": "git+https://github.com/LN-Zap/node-lnd-grpc.git"
   },
   "keywords": [
-    "bitcoin",
+    "groestlcoin",
     "lightning-network",
     "lnd",
     "grpc"

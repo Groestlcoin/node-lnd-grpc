@@ -109,7 +109,7 @@ service WalletKit {
     rpc PublishTransaction(Transaction) returns (PublishResponse);
 
     /**
-    SendOutputs is similar to the existing sendmany call in Bitcoind, and
+    SendOutputs is similar to the existing sendmany call in Groestlcoind, and
     allows the caller to create a transaction that sends to several outputs at
     once. This is ideal when wanting to batch create a set of transactions.
     */

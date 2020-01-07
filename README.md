@@ -94,7 +94,7 @@ The constructor accepts the following options:
 new LndGrpc({
   host: 'localhost:10009',
   cert: '~/.lnd/tls.cert',
-  macaroon: '~/.lnd/data/chain/bitcoin/mainnet/admin.macaroon',
+  macaroon: '~/.lnd/data/chain/groestlcoin/mainnet/admin.macaroon',
 })
 ```
 
@@ -104,7 +104,7 @@ new LndGrpc({
 new LndGrpc({
   host: 'localhost:10009',
   cert: '~/.lnd/tls.cert',
-  macaroon: '~/.lnd/data/chain/bitcoin/mainnet/admin.macaroon',
+  macaroon: '~/.lnd/data/chain/groestlcoin/mainnet/admin.macaroon',
   version: '0.6.0-beta',
   waitForMacaroon: 30 * 1000, // 30 seconds
   waitForCert: true,
@@ -155,7 +155,7 @@ import LndGrpc from 'lnd-grpc'
 const grpc = new LndGrpc({
   host: 'localhost:10009',
   cert: '~/.lnd/tls.cert',
-  macaroon: '~/.lnd/data/chain/bitcoin/mainnet/admin.macaroon',
+  macaroon: '~/.lnd/data/chain/groestlcoin/mainnet/admin.macaroon',
   waitForCert: true,
   waitForMacaroon: true,
 })

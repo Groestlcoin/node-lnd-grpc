@@ -19,10 +19,10 @@ export const spawnLnd = (options = {}) => {
 
   const process = spawn(lndBinPath, [
     `--lnddir=${lndDir}`,
-    '--bitcoin.active',
-    '--bitcoin.testnet',
-    '--bitcoin.node=neutrino',
-    '--neutrino.connect=testnet3-btcd.zaphq.io',
+    '--groestlcoin.active',
+    '--groestlcoin.testnet',
+    '--groestlcoin.node=neutrino',
+    '--neutrino.connect=grsd-testnet.groestlcoin.org',
     // '--noseedbackup',
     // '--notls=1',
   ])
@@ -56,7 +56,7 @@ export const host = 'localhost:10009'
 
 export const cert = join(lndDir, 'tls.cert')
 
-export const macaroon = join(lndDir, 'data/chain/bitcoin/testnet/', 'admin.macaroon')
+export const macaroon = join(lndDir, 'data/chain/groestlcoin/testnet/', 'admin.macaroon')
 
 export const grpcOptions = { host, cert, macaroon, waitForCert: true, waitForMacaroon: true }
 
